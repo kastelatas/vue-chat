@@ -1,0 +1,37 @@
+.nav {
+  @include fontFiraSans();
+
+  &__container {
+    @include make-row()
+  }
+
+  &__item {
+    & + & {
+      padding-left: 22px;
+      //padding-left:  5.4%;
+      border-left: 1px solid $secondary-text;
+      margin-left: 22px;
+    }
+
+  }
+
+
+
+  &__link {
+    font-weight: 600;
+    color: $primary-text;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    &_active {
+      color: $primary-color;
+      text-decoration: underline;
+
+      &-icon {
+        svg {
+          fill: $primary-color !important;
+        }
+      }
+    }
+  }
+}

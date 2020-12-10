@@ -1,0 +1,122 @@
+.sidebar-right {
+  @include createSidebar($sidebar-width);
+  padding-right: $page-padding;
+
+  &__header {
+    @include flexCenterX();
+    justify-content: flex-end;
+    height: $header-height;
+    padding-right: 0;
+    //padding-right: 32px;
+  }
+
+  &__header-text {
+    color: $secondary-text;
+    margin-right: 7px;
+  }
+
+  &__content {
+    height: calc(100% - 72px);
+    overflow-y: auto;
+    @include removeScrollbar();
+  }
+
+
+  &-mobile {
+    position: fixed;
+    height: 100%;
+    width: 265px;
+    box-sizing: border-box;
+    right: -256px;
+    top: 54px;
+    z-index: 30;
+    display: none;
+    background: #f6f8fc;
+    padding: 16px;
+    transition: all .3s;
+
+
+
+    &__category-list {
+      width: 217px;
+      height: 100%;
+      overflow: scroll;
+    }
+
+    &-open {
+      display: block;
+      right: 0;
+      transition: all .3s;
+      z-index: 31;
+      box-shadow: -6px 8px 19px 0px rgba(0, 0, 0, 0.3);
+    }
+
+    &__open {
+      position: absolute;
+      left: -36px;
+      top: 0;
+      background: #f6f8fc;
+      padding: 5px;
+      border-bottom-left-radius: 10px;
+      border-top-left-radius: 10px;
+      cursor: pointer;
+      box-shadow: -7px 7px 14px 0px rgba(50, 50, 50, 0.2);
+
+
+      &-bg {
+        background: #65e18e;
+        padding: 4px;
+        border-radius: 10px;
+      }
+
+      .card-length {
+        @include fontFiraSans
+        font-weight: bold;
+        font-size: 12px;
+        padding: 2px 4px;
+        font-stretch: normal;
+        font-style: normal;
+        letter-spacing: normal;
+        text-align: left;
+        color: #ffffff;
+        border-radius: 7px;
+        background-color: #ff3fca;
+        position: absolute;
+        top: 15px;
+        left: 21px;
+
+      }
+    }
+
+    &__count {
+      @include fontFiraSans
+      font-weight: bold;
+      font-size: 12px;
+      padding: 2px 4px;
+      font-stretch: normal;
+      font-style: normal;
+      letter-spacing: normal;
+      text-align: left;
+      color: #ffffff;
+      border-radius: 7px;
+      background-color: #ff3fca;
+      position: absolute;
+      bottom: 2px;
+      right: 2px;
+    }
+
+  }
+
+
+}
+
+.switcher {
+  padding: 5px 5px 5px 23px;
+  background-color: $white;
+  border-radius: 20px;
+}
+
+
+[hidden] {
+  display: none;
+}

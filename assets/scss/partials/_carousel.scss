@@ -1,0 +1,91 @@
+
+
+
+.carousel {
+  position: relative;
+
+  &__button-group {
+    @include flexCenterX();
+    position: absolute;
+    right: 0;
+    top: -46px;
+    font-size: 11px;
+
+    .btn,
+    .btn > span {
+      display: flex;
+    }
+  }
+
+  &__button-left {
+    //margin-right: 20px;
+  }
+
+  &__separator {
+    padding: 0 20px;
+    color:#b6beca
+  }
+
+  .slick-initialized .slick-slide {
+    display: block;
+    width: auto !important;
+    margin-right: 20px;
+    position: relative;
+  }
+
+
+  .slick-track {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: stretch;
+  }
+
+  .slick-prev {
+    left: auto;
+    right: 30px;
+    top: -30px;
+    z-index: 10000;
+  }
+
+  .slick-next {
+    right: 0;
+    top: -30px;
+    z-index: 10000;
+  }
+
+  .slick-next:before, .slick-prev:before {
+    display: none;
+  }
+
+}
+
+
+.carousel-mini li {
+  //width: auto !important;
+}
+
+.carousel__profile {
+   .react-multi-carousel-list
+   .react-multi-carousel-track {
+     //transform: translate3d(0px, 0px, 0px) !important;
+     //width: auto;
+
+     .react-multi-carousel-item{
+       width: 100% !important;
+       margin-right: 34px;
+     }
+   }
+}
+
+.carousel-item__img {
+  cursor:pointer;
+  transition: transform 1s ease;
+  background-position: center center;
+
+  &:hover {
+    transform: scale(1.1);
+    transition: transform 1s ease;
+  }
+}
+

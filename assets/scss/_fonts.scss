@@ -1,0 +1,80 @@
+//@font-face {
+//  font-family: 'Fira Sans';
+//  src: url("/fonts/FiraSans/fira-sans-Book.ttf");
+//  src: url("/fonts/FiraSans/fira-sans-standart.ttf");
+//}
+//
+//@font-face {
+//  font-family: 'Fira Sans Light';
+//  src: url("/fonts/FiraSans/fira-sans-Light.ttf");
+//}
+//
+//@font-face {
+//  font-family: 'Fira Sans Medium';
+//  src: url("/fonts/FiraSans/fira-sans-Medium.ttf");
+//}
+//
+//@font-face {
+//  font-family: 'Fira Sans Thin';
+//  src: url("/fonts/FiraSans/fira-sans-Thin.ttf");
+//}
+
+@font-face {
+  font-family: 'Black Sunday';
+  src: url("/fonts/Sunday-black.ttf");
+}
+
+@font-face {
+  font-family: 'Black Sunday SemiBold';
+  src: url("/fonts/FiraSans/fira-sans-semiBold.ttf");
+}
+
+
+
+
+
+@font-face {
+  font-family: 'Fira Sans';
+  src: url('/fonts/fira_sans_book.eot'); /* IE 9 Compatibility Mode */
+  src: url('/fonts/fira_sans_book.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+  url('/fonts/fira_sans_book.woff2') format('woff2'), /* Super Modern Browsers */
+  url('/fonts/fira_sans_book.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+  url('/fonts/fira_sans_book.ttf') format('truetype'), /* Safari, Android, iOS */
+  url('/fonts/fira_sans_book.svg#fira_sans_book') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+
+
+@font-face {
+  font-family: 'Fira Sans Light';
+  src: url('/fonts/fira_sans_light.eot'); /* IE 9 Compatibility Mode */
+  src: url('/fonts/fira_sans_light.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+  url('/fonts/fira_sans_light.woff2') format('woff2'), /* Super Modern Browsers */
+  url('/fonts/fira_sans_light.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+  url('/fonts/fira_sans_light.ttf') format('truetype'), /* Safari, Android, iOS */
+  url('/fonts/fira_sans_light.svg#fira_sans_light') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+
+
+
+@font-face {
+  font-family: 'Fira Sans Medium';
+  src: url('/fonts/fira_sans_medium.eot'); /* IE 9 Compatibility Mode */
+  src: url('/fonts/fira_sans_medium.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+  url('/fonts/fira_sans_medium.woff2') format('woff2'), /* Super Modern Browsers */
+  url('/fonts/fira_sans_medium.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+  url('/fonts/fira_sans_medium.ttf') format('truetype'), /* Safari, Android, iOS */
+  url('/fonts/fira_sans_medium.svg#fira_sans_medium') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+
+
+@font-face {
+  font-family: 'Fira Sans Thin';
+  src: url('/fonts/fira_sans_thin.eot'); /* IE 9 Compatibility Mode */
+  src: url('/fonts/fira_sans_thin.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+  url('/fonts/fira_sans_thin.woff2') format('woff2'), /* Super Modern Browsers */
+  url('/fonts/fira_sans_thin.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+  url('/fonts/fira_sans_thin.ttf') format('truetype'), /* Safari, Android, iOS */
+  url('/fonts/fira_sans_thin.svg#fira_sans_thin') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+
+

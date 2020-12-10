@@ -1,0 +1,43 @@
+.dashboard{
+  //min-height: 100%;
+  margin-bottom: 10px;
+
+  &__wrapper {
+    @include make-row();
+    justify-content: center;
+    height: 100%;
+  }
+
+  &__row {
+    @include make-row();
+    justify-content: center;
+  }
+
+  &_block {
+    width: 100%;
+  }
+
+  &__col  {
+    @include make-column();
+  }
+
+  &__widget-col {
+    @include make-column();
+
+    .widget {
+      //width: 100%;
+      //&:not(:last-child) {
+      //  margin-bottom: 10px;
+      //}
+    }
+  }
+
+  .widget_type_statistics {
+    .profile-statistics__tooltip {
+      position: absolute;
+      right: -32px;
+      z-index: 20;
+    }
+  }
+
+}

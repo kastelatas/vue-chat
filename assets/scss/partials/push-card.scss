@@ -1,0 +1,179 @@
+@keyframes fadeInUp {
+  from {
+    transform: translate3d(0, 40px, 0);
+    display: none;
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+    display: block;
+  }
+}
+
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-fill-mode: both
+}
+
+.animatedFadeInUp {
+  opacity: 0
+}
+
+.fadeInUps {
+  opacity: 0;
+  animation-name: fadeInUp;
+  -webkit-animation-name: fadeInUp;
+}
+
+
+@keyframes fadeOutUp {
+  from {
+    transform: translate3d(0, 40px, 0);
+    opacity: 1
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 0;
+    display: none;
+  }
+}
+
+.animatedfadeOutUp {
+  opacity: 1
+}
+
+.fadeOutUp {
+  opacity: 1;
+  animation-name: fadeOutUp;
+  -webkit-animation-name: fadeOutUp;
+}
+
+[v-cloak] {
+  display: none;
+}
+
+.list-enter-active, .list-leave-active {
+  transition: all 1s;
+}
+
+.list-enter, .list-leave-to /* .list-leave-active до версии 2.1.8 */
+{
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.push-card {
+  //width: 360px;
+  //height: 186px;
+  border-radius: 10px;
+  color: $text;
+  padding: 34px 32px;
+  box-sizing: border-box;
+  background-color: $white;
+  position: relative;
+  margin-bottom: 10px;
+  //cursor: pointer;
+
+
+  & + & {
+    margin-top: 10px;
+  }
+
+  &__timer {
+    width: 4px;
+    height: 100%;
+    display: block;
+    position: absolute;
+    background: #9cb4d8;
+    left: 0;
+    top: 0;
+    -webkit-transition: width .3s ease-in-out;
+    -moz--transition: width .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    transform: scaleY(1);
+
+
+
+    &-active {
+      transform: scaleY(0);
+    }
+  }
+
+  &__content {
+    @include make-row();
+    align-items: center;
+    margin-bottom: 15px;
+    position: relative;
+    z-index: 2;
+
+    .ava {
+      margin-right: 21px;
+    }
+  }
+
+  &__wrap {
+    @include make-column();
+    margin-top: 5px;
+  }
+
+  &__title {
+    @include fontFiraSans;
+    color: $primary-text;
+    font-size: 20px;
+    padding-bottom: 14px;
+  }
+
+  &__text {
+    @include fontFiraSans;
+    font-size: 16px;
+    color: $secondary-text;
+  }
+
+  &__row {
+    @include make-row();
+    align-items: center;
+    justify-content: space-between;
+
+    .push-card__text {
+      color: $primary-text;
+      margin-right: 17px;
+    }
+  }
+}
+
+.open-push {
+  margin-bottom: 10px;
+  .greeting-message {
+    font-size: 19px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #b6beca;
+
+    div {
+      color: $primary-text;
+      margin: 6px 0;
+    }
+  }
+}
+
+.list-complete-item {
+  transition: all 1s;
+  display: inline-block;
+  margin-right: 10px;
+}
+.list-complete-enter, .list-complete-leave-to
+  /* .list-complete-leave-active до версии 2.1.8 */ {
+  opacity: 0;
+  transform: translateY(30px);
+}
+.list-complete-leave-active {
+  position: absolute;
+}

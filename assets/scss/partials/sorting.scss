@@ -1,0 +1,52 @@
+.sorting {
+  @include make-row();
+  @include fontFiraSans();
+  position: relative;
+  width: 187px;
+  color: $primary-text;
+  user-select: none;
+
+  &__text {
+    display: inline-block;
+    color: $secondary-text;
+    margin-right: 7px;
+  }
+
+  &__attribute {
+    cursor: pointer;
+    padding: 0 10px;
+    color: $primary-text;
+  }
+
+  .btn-icon {
+    cursor: pointer;
+    margin-left: 6px;
+    transform: rotate(180deg);
+
+    &.desc {
+      transform: rotate(0deg);
+    }
+  }
+
+  &__menu {
+    z-index: 11;
+    position: absolute;
+    background: #fff;
+    border: 1px solid #dfe2e7;
+    border-radius: 5px;
+    padding: 5px;
+    right: 0;
+    left: 61px;
+    top: 34px;
+
+    li {
+      display: block;
+      cursor: pointer;
+      padding: 8px;
+      text-transform: capitalize;
+      &:hover {
+        background-color: $main-background;
+      }
+    }
+  }
+}

@@ -1,0 +1,137 @@
+.main {
+  background-color: $main-background;
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+
+
+
+  &__section {
+    @include fontFiraSans();
+    @include removeScrollbar();
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    overflow: auto;
+    flex-flow: column;
+    padding: 0 $main-section-padding;
+
+
+
+  }
+
+  &__content {
+    //height: calc(100% - #{$header-height});
+  }
+}
+
+.chat-main {
+  padding-left: 0;
+}
+
+@-moz-document url-prefix() {
+  scrollbar {
+    -moz-appearance: none !important;
+    background:transparent !important;
+  }
+  thumb,scrollbarbutton {
+    -moz-appearance: none !important;
+    background-color: rgb(0,0,255) !important;
+  }
+
+  thumb:hover,scrollbarbutton:hover {
+    -moz-appearance: none !important;
+    background-color: rgb(255,0,0) !important;
+  }
+
+  scrollbarbutton {
+    display: none !important;
+  }
+
+  scrollbar[orient="vertical"] {
+    min-width: 15px !important;
+  }
+}
+
+
+scrollbar {
+  z-index: 999;
+  position: relative !important;
+  transition: all 0s !important;
+}
+
+scrollbar,
+scrollbar * {
+  -moz-appearance: none !important;
+  margin: 0px !important;
+  padding: 0px !important;
+  border: 0px !important;
+  box-shadow: none !important;
+
+}
+
+:not(select)>scrollbar[orient="vertical"],
+html>scrollbar[orient="vertical"] {
+  -moz-margin-start: -12px !important;
+  max-width: 12px !important;
+  min-width: 12px !important;
+
+  background: linear-gradient( rgba(0,0,0,0), rgba(0,0,0,0) );
+  background-size: 1px 1px;
+  background-repeat: repeat-y !important;
+  background-position: 50% 0% !important;
+  cursor: row-resize;
+}
+
+scrollbar[orient="horizontal"] {
+  margin-top: -12px !important;
+  max-height: 12px !important;
+  min-height: 12px !important;
+
+  background: linear-gradient( rgba(0,0,0,0), rgba(0,0,0,0) );
+  background-size: 1px 1px;
+  background-repeat: repeat-x;
+  background-position: 0% 50%;
+  cursor: col-resize;
+}
+
+scrollbar thumb[orient="vertical"] {
+  min-height: 24px !important;
+  width: 12px !important;
+  min-width: 12px !important;
+  max-width: 12px !important;
+}
+
+scrollbar thumb[orient="horizontal"] {
+  min-width: 24px !important;
+  height: 12px !important;
+  min-height: 12px !important;
+  max-height: 12px !important;
+}
+
+scrollbar thumb {
+  border-radius: 6px !important;
+  background: transparent !important;
+  border: 2px solid rgba(0,255,255,0) !important;
+  box-shadow: 0 0 0 8px #272b35 inset !important;
+  transition: all 0s !important;
+  opacity: 0.1 !important;
+}
+
+scrollbar:hover thumb,
+scrollbar thumb:active {
+  box-shadow: 0 0 0 8px #cd23b9 inset !important;
+  opacity: 1 !important;
+}
+
+/* no buttons */
+scrollbar scrollbarbutton{
+  min-height: 0px !important;
+  min-width: 0px !important;
+  max-height: 12px !important;
+  max-width: 12px !important;
+  height: 0px !important;
+  width: 0px !important;
+}
+
+

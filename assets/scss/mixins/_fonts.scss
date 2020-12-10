@@ -1,0 +1,30 @@
+@mixin fontFiraSansSemiBolt {
+    font-family: "Fira Sans SemiBold", sans-serif;
+    -webkit-font-smoothing: antialiased
+}
+
+@mixin fontFiraSansMedium {
+    font-family: "Fira Sans Medium", sans-serif;
+    -webkit-font-smoothing: antialiased
+}
+
+@mixin fontFiraSansLight {
+    font-family: "Fira Sans Light", sans-serif;
+    -webkit-font-smoothing: antialiased
+}
+
+@mixin fontFiraSans {
+    font-family: "Fira Sans", sans-serif;
+    -webkit-font-smoothing: antialiased
+}
+
+@mixin fontFiraSansThin {
+    font-family: "Fira Sans Thin", sans-serif;
+    -webkit-font-smoothing: antialiased
+}
+
+@mixin fontSunday {
+    font-family: "Black Sunday", sans-serif;
+    -webkit-font-smoothing: antialiased
+}
+
